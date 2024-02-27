@@ -306,8 +306,8 @@ class Bard {
                 let fs;
 
                 try {
-                    fs = await import("fs")
-                } catch {
+                    fs = require('fs')
+                        } catch {
                     throw new Error(
                         "Loading from an image file path is not supported in a browser environment.",
                     );
